@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+    min-height: 100vh;
+}
+
+.nav-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-style: none;
+    background-color: rgb(80, 80, 80, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-menu > .nav-link {
+    text-decoration: none;
+    margin-right: 2rem;    
+}
+
+.nav-menu > .nav-link:visited {
+    text-decoration: none;
+    color: inherit;    
+}
+
+
+.page-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.side-panel-container > .right {
+    border: solid black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    right: 0;
+    height: 90vh;    
+    z-index: 99;
+}
+
+.side-panel-container > .left {
+    border: solid black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: fixed;
+    left: 0;
+    height: 90vh;    
+    z-index: 99;
+}
